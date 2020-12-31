@@ -1,0 +1,70 @@
+
+.hide {
+    display: none;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-mask {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+}
+
+.modal-alert {
+    margin: 0 auto;
+    width: 500px;
+    opacity: 1;
+}
+
+.vertical-center {
+    top: 40%;
+    position: relative;
+    transform: translateY(-100%);
+    left: 200px;
+}
+
+/*扫雷的CSS*/
+.row{
+    float: left;
+}
+.row clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.cell{
+    font-size: 0;
+    /*水平居中*/
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 5px solid #cccccc;
+    background: lightgrey;
+    width: 5px;
+    height: 8px;
+}
+.opened{
+    font-size: 14px;
+
+    line-height: 10px;
+    background: lightslategray;
+}
+
+.img {
+    width: 10px;
+    height: 10px;
+    /*照片的地址*/
+    background-image: url("炸弹.jpg");
+    background-size: cover;
+}
