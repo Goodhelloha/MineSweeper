@@ -3,7 +3,7 @@ const log = console.log.bind(console)
 const e = function(selector) {
     let element = document.querySelector(selector)
     if (element === null) {
-        let s = `选择器 ${selector} 写错了, 请仔细检查并且复习三种基本的选择器`
+        let s = `选择器 ${selector} 写错了`
         alert(s)
         return null
     } else {
@@ -14,7 +14,7 @@ const e = function(selector) {
 const es = function(selector) {
     let elements = document.querySelectorAll(selector)
     if (elements.length === 0) {
-        let s = `选择器 ${selector} 写错了, 请仔细检查并且复习三种基本的选择器`
+        let s = `选择器 ${selector} 写错了`
         alert(s)
         return []
     } else {
@@ -51,7 +51,7 @@ const bindAll = function(selector, eventName, callback) {
 const find = function(element, selector) {
     let e = element.querySelector(selector)
     if (e === null) {
-        let s = `选择器 ${selector} 写错了, 请仔细检查并且复习三种基本的选择器`
+        let s = `选择器 ${selector} 写错了`
         alert(s)
         return null
     } else {
@@ -114,15 +114,15 @@ const closestTag = function(element, tagName) {
 const closest = function(element, selector) {
     let c = selector[0]
     if (c === '.') {
-        // class 选择器
+     
         let className = selector.slice(1)
         return closestClass(element, className)
     } else if (c === '#') {
-        // id 选择器
+       
         let idName = selector.slice(1)
         return closestId(element, idName)
     } else {
-        // 元素选择器
+        
         let tagName = selector
         return closestTag(element, tagName)
     }
