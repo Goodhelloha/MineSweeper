@@ -23,7 +23,7 @@
 <!--扫雷html-->
 <div id="id-div-mime"></div>
 
-<script src="常用的代码.js"></script>
+<script src="调用的代码.js"></script>
 <script>
     // const appendHtml = (element, html) => element.insertAdjacentHTML('beforeend', html)
 
